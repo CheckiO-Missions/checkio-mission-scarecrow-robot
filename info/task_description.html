@@ -1,17 +1,17 @@
 <!-- Describe task in general -->
 <p style="text-align: justify;">
-    A farmer employs a scarecrow robot to protect his cornfield. The robot follows a path around the plantation, passing through <span translate="no"><code>stations</code></span> circled. Each day, the robot starts at station 1 and follows a series of <span translate="no"><code>commands</code></span> that move it to neighboring stations, both clockwise (1) and counterclockwise (-1).
+    A farmer employs a scarecrow robot to protect his cornfield. The robot follows a path around the plantation, passing through <code>stations</code> circled. Each day, the robot starts at station 1 and follows a series of <code>commands</code> that move it to neighboring stations, both clockwise (1) and counterclockwise (-1).
 </p>
 <p style="text-align: center;">
     <img  title="example" src="{{MEDIA}}scarecrow-robot.svg" alt="example" style="max-height: 200px"/>
 </p>
 <p style="text-align: justify;">
-    Given also a number of <span translate="no"><code>control</code></span> station, which is under monitoring, calculate how many times the robot visits the station during a day.
+    Given also a number of <code>control</code> station, which is under monitoring, calculate how many times the robot visits the station during a day.
 </p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input:</strong> Two integers (<span translate="no"><code>{% if is_js %}number{% else %}int{% endif %}</code></span>) and a list (<span translate="repeat"><code>{% if is_js %}array{% else %}list{% endif %}</code></span>) of integers.
+    <strong>Input:</strong> Two integers (<code>{% if is_js %}number{% else %}int{% endif %}</code>) and a <span translate="repeat">{% if is_js %}array{% else %}list{% endif %}</span> (<code>{% if is_js %}array{% else %}list{% endif %}</code>) of integers.
 </p>
 
 <p>
