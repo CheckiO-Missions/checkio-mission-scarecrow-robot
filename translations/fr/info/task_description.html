@@ -1,0 +1,29 @@
+<!-- Describe task in general -->
+<p style="text-align: justify;">
+    Un agriculteur emploie un robot épouvantail pour protéger son champ de maïs. Le robot suit un chemin autour de la plantation, en passant par <code>stations</code> encerclé. Chaque jour, le robot commence à la station 1 et suit une série de <code>commands</code> qui le déplacent vers les stations voisines, dans le sens des aiguilles d'une montre (1) et dans le sens inverse (-1).
+</p>
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}scarecrow-robot.svg" alt="example" style="max-height: 200px"/>
+</p>
+<p style="text-align: justify;">
+    Étant donné également un numéro de <code>control</code> station, qui est sous surveillance, calculez combien de fois le robot visite la station au cours d'une journée.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> Deux nombres entiers (<code>{% if is_js %}number{% else %}int{% endif %}</code>) et un tableau {% if is_js %}{% else %} liste{% endif %} <span>({% if is_js %}array{% else %}list{% endif %})</span> (<code>{% if is_js %}array{% else %}list{% endif %}</code>) d'entiers.
+</p>
+
+<p>
+   <strong>Sortie:</strong> Entier.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Exemples:</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
