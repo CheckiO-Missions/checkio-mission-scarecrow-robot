@@ -1,41 +1,29 @@
 <!-- Describe task in general -->
-
-<p>
-    Um fazendeiro emprega um robô-espantalho para proteger sua plantação de milho. O robô segue um caminho que circunda a plantação, passando por N estações numeradas sequencialmente no sentido horário. A cada dia, o robô começa na estação 1 e segue uma série de comandos que o movem para estações vizinhas, tanto no sentido horário quanto no anti-horário. </p>
-<img  title="example" src="{{MEDIA}}robo.png" alt="example" style="max-height: 300px"/>
-<p>
-Dado o número da estação mais próxima à área devastada e a sequência de comandos executados pelo robô em um dia, calcule quantas vezes o robô permaneceu na estação mais próxima à área devastada.
-
+<p style="text-align: justify;">
+    A farmer employs a scarecrow robot to protect his cornfield. The robot follows a path around the plantation, passing through <span translate="no"><code>stations</code></span> circled. Each day, the robot starts at station 1 and follows a series of <span translate="no"><code>commands</code></span> that move it to neighboring stations, both clockwise (1) and counterclockwise (-1).
 </p>
-
-
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}scarecrow-robot.svg" alt="example" style="max-height: 200px"/>
+</p>
+<p style="text-align: justify;">
+    Given also a number of <span translate="no"><code>control</code></span> station, which is under monitoring, calculate how many times the robot visits the station during a day.
+</p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Entrada </strong> Uma lista onde o primeiro elemento é um inteiro N, o número de estações, seguido por um inteiro C, o número de comandos, e um inteiro S, o número da estação mais próxima à área devastada. A lista é seguida por C inteiros representando a sequência de comandos, onde 1 indica um movimento para a próxima estação no sentido horário, e -1 indica um movimento para a próxima estação no sentido anti-horário.
+    <strong>Input:</strong> Two integers (<span translate="no">{% if is_js %}number{% else %}int{% endif %}</span>) and a list (<span translate="repeat">{% if is_js %}array{% else %}list{% endif %}</span>) of integers.
 </p>
 
 <p>
-    <strong>Saída: </strong> Um inteiro representando o número de vezes que o robô permaneceu na estação S durante o dia.
+    <strong>Output:</strong> Integer.
 </p>
 
 
 <!-- Put some usage examples -->
 <div class="for_info_only">
     <p>
-        <strong>Example:</strong>
+        <strong>Examples:</strong>
     </p>
 
-{% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">countConsecutiveSummers(42) == 4
-countConsecutiveSummers(99) == 6
-</pre>
-{% else %}
-<pre class="brush: python">
-    robô(8, 8, 3, [1, -1, 1, 1, 1, -1, 1, 1]) >> 2
-robô(5, 4, 1, [1, 1, 1, 1]) >> 1
-robô(2, 1, 1, [1]) >> 1
-
-</pre>
-{% endif %}
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
